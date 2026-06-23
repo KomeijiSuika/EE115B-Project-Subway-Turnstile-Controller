@@ -1,0 +1,32 @@
+{
+    "digital-ide.prj.verilator.install.path": "/home/shenby/apps/miniconda3/bin",
+    "digital-ide.prj.iverilog.install.path": "/home/shenby/apps/miniconda3/bin",
+    "digital-ide.prj.verible.install.path": "/home/shenby/apps/miniconda3/bin",
+    "digital-ide.function.lsp.linter.verilog.diagnostor": "iverilog",
+    "digital-ide.function.lsp.linter.systemverilog.diagnostor": "iverilog",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.recipe.default": "first",
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk-xelatex",
+            "tools": [
+                "latexmk-xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-xelatex",
+            "command": "latexmk",
+            "args": [
+                "-cd",
+                "-r",
+                "%DIR%/.latexmkrc",
+                "-outdir=build",
+                "-auxdir=build",
+                "%DOC%"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+# Hypo-Workflow Project Config — subway-turnstile-controller
+pipeline:
+  name: subway-turnstile-controller
+  prompts_dir: .pipeline/prompts
+  reports_dir: .pipeline/reports
+  state_file: .pipeline/state.yaml
+  log_file: .pipeline/log.md
+
+execution:
+  mode: self
+  subagent_tool: auto
+  steps:
+    preset: implement-only
+
+evaluation:
+  diff_score: 3
+  code_quality: 3
+  overall: 3
+  adaptive_threshold: true
+
+output:
+  language: zh-CN
+  timezone: Asia/Shanghai
+
+automation:
+  level: balanced
+
+platform: auto
